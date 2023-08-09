@@ -7,12 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "npm run build && next export -o _static"
+    "export": "npm run build && next export -o _static",
+    "deploy": "scp -r ./_static/** ubuntu@124.221.143.94:~/reve"
   },
   "dependencies": {
-    "eslint-config-next": "13.0.3",
-    "framer-motion": "^7.6.7",
-    "next": "13.0.3",
+    "antd": "^5.7.3",
+    "eslint-config-next": "13.1.6",
+    "framer-motion": "^9.0.2",
+    "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

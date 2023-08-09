@@ -1,0 +1,18 @@
+.header .nav-item {
+  padding: 0px 20px;
+}
+.header .nav-item span {
+  font-family: rigel star;
+}
+.header .nav-item:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #7774ff
+}
+
+/* @keyframes height {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: max-content
+    }
+} */

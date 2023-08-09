@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Col, Row } from 'antd';
 import { socials } from '../constants';
 
 import styles from '../styles';
@@ -11,48 +12,60 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
+    className={`${styles.xPaddings} pt-[60px] relative bg-black text-white`}
   >
     <div className="footer-gradient" />
-    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Enter the Metaverse
-        </h4>
-        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Enter Metaverse
-          </span>
-        </button>
-      </div>
+    <div className={`${styles.innerWidth} mx-auto`}>
+      <Row gutter={[20, 20]}>
+        <Col md={12} xs={24} lg={6}>
+          <div className="flex flex-col gap-[10px]">
+            <h4 className="text-[#7774ff] text-[18px] font-bold">Info</h4>
 
-      <div className="flex flex-col">
-        <div className="mb-[50px] h-[2px] bg-white opacity-10" />
-
-        <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">
-            METAVERUS
-          </h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2021 - 2022 Metaversus. All rights reserved.
-          </p>
-
-          <div className="flex gap-4">
-            {socials.map((social) => (
-              <img
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-              />
-            ))}
+            <a href="#top">Rave Book</a>
+            <a href="#top">Teams of service</a>
+            <a href="#top">Audit Report</a>
+            <a href="#top">Privacy policy</a>
           </div>
-        </div>
+        </Col>
+        <Col md={12} xs={24} lg={6}>
+          <div className="flex flex-col gap-[10px]">
+            <h4 className="text-[#7774ff] text-[18px] font-bold">Company</h4>
+
+            <a href="#top">Team</a>
+            <a href="#top">LinkedIn</a>
+          </div>
+        </Col>
+
+        <Col md={12} xs={24} lg={6}>
+          <div className="flex flex-col gap-[10px]">
+            <h4 className="text-[#7774ff] text-[18px] font-bold">Account</h4>
+
+            <a href="#top">Profile</a>
+            <a href="#top">My NFTs</a>
+            <a href="#top">My Collections</a>
+          </div>
+        </Col>
+        <Col md={12} xs={24} lg={6}>
+          <div className="gap-4">
+            <div className="flex gap-4">
+              {socials.map((social) => (
+                <img
+                  key={social.name}
+                  src={social.url}
+                  alt={social.name}
+                  className="w-[24px] h-[24px] object-contain cursor-pointer"
+                />
+              ))}
+            </div>
+            <div className="mt-[20px] font-bold">
+              <h4 className="text-[#7774ff] text-[18px]">Contact us</h4>
+              <div className="mt-[4px]">main@contact.com</div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <div className="text-center pt-[60px] pb-[30px]">
+        © Copyright 2023 - RAVE
       </div>
     </div>
   </motion.footer>

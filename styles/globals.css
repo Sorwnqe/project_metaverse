@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './Navbar.css';
 
+@font-face {
+  font-family: rigel star;
+  src: url('/font/Rigelstar.otf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +15,6 @@
   scroll-behavior: smooth;
 }
 
-.gradient-01 {
-  background-image: linear-gradient(
-    270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
-  );
-  filter: blur(125px);
-}
 
 .hero-gradient {
   background: linear-gradient(
@@ -40,8 +32,17 @@
   top: 0px;
   right: 0px;
 
-  background: #7aebfb;
+  background: rgb(76 33 70);
   filter: blur(190px);
+}
+
+.gradient-btn {
+  background-image: linear-gradient(
+    97.86deg,
+    #330d92 0%,
+    #591a87 21.65%,
+    #f2704e 100%
+  );
 }
 
 .glassmorphism {
@@ -71,7 +72,7 @@
   left: 30%;
   top: 10%;
 
-  background: rgba(45, 72, 152, 0.75);
+  background: rgb(76 33 70 / 75%);
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
@@ -102,6 +103,23 @@
   left: 37%;
   bottom: 0;
 
-  background: #65c4fa;
+  background: rgb(123, 57, 113);
   filter: blur(150px);
+}
+
+.hero-jump {
+  animation-name: hero-jump;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes hero-jump {
+    0% {
+      top: -28px;
+    }
+    100% {
+      top: -38px;
+    }
 }
