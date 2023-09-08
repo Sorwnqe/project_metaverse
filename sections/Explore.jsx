@@ -15,7 +15,6 @@ const Explore = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto`}
     >
-
       <TitleText title={<>Our Main Features</>} textStyles="text-center" />
     </motion.div>
   </section>

@@ -21,7 +21,9 @@ const Footer = () => (
           <div className="flex flex-col gap-[10px]">
             <h4 className="text-[#7774ff] text-[18px] font-bold">Info</h4>
 
-            <a href="#top">Rave Book</a>
+            <a href="https://elite-packet-d7d.notion.site/RAVE-NFT-107dbba357c94a479734660902b5e9b8">
+              Rave Book
+            </a>
             <a href="#top">Teams of service</a>
             <a href="#top">Audit Report</a>
             <a href="#top">Privacy policy</a>
@@ -49,17 +51,23 @@ const Footer = () => (
           <div className="gap-4">
             <div className="flex gap-4">
               {socials.map((social) => (
-                <img
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   key={social.name}
-                  src={social.url}
-                  alt={social.name}
-                  className="w-[24px] h-[24px] object-contain cursor-pointer"
-                />
+                >
+                  <img
+                    src={social.url}
+                    alt={social.name}
+                    className="w-[24px] h-[24px] object-contain cursor-pointer"
+                  />
+                </a>
               ))}
             </div>
             <div className="mt-[20px] font-bold">
               <h4 className="text-[#7774ff] text-[18px]">Contact us</h4>
-              <div className="mt-[4px]">main@contact.com</div>
+              <div className="mt-[4px]">ravetech111@proton.me</div>
             </div>
           </div>
         </Col>

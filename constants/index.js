@@ -23,17 +23,18 @@ export const socials = [
   {
     name: 'twitter',
     url: '/twitter.svg',
+    href: 'https://twitter.com/rave_nft_xyz',
   },
-  {
-    name: 'linkedin',
-    url: '/linkedin.svg',
-  },
+  // {
+  //   name: "linkedin",
+  //   url: "/linkedin.svg",
+  // },
   {
     name: 'telegram',
     url: '/telegram.svg',
   },
-  {
-    name: 'facebook',
-    url: '/facebook.svg',
-  },
+  // {
+  //   name: "facebook",
+  //   url: "/facebook.svg",
+  // },
 ];
