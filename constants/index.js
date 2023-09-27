@@ -32,6 +32,7 @@ export const socials = [
   {
     name: 'telegram',
     url: '/telegram.svg',
+    href: 'https://t.me/RaveNFT',
   },
   // {
   //   name: "facebook",

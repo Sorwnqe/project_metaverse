@@ -3,5 +3,6 @@ import { TypingText, TitleText } from './CustomTexts';
 import StartSteps from './StartSteps';
 import InsightCard from './InsightCard';
 import Footer from './Footer';
+import Motion from './motion';
 
-export { Navbar, TitleText, TypingText, StartSteps, InsightCard, Footer };
+export { Motion, Navbar, TitleText, TypingText, StartSteps, InsightCard, Footer };

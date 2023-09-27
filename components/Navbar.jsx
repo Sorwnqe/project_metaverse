@@ -40,9 +40,9 @@ const Navbar = () => {
             Earn
           </Button>
           <Button
-            type="text"
+            type="link"
             className="nav-item font-bold text-[16px] leading-[30.24px] text-white uppercase"
-            onClick={() => message.info('Coming soon')}
+            href="https://elite-packet-d7d.notion.site/RAVE-NFT-107dbba357c94a479734660902b5e9b8?pvs=4"
           >
             About
           </Button>
@@ -95,9 +95,9 @@ const Navbar = () => {
           Earn
         </Button>
         <Button
-          type="text"
+          type="link"
           className="nav-item h-[42px] font-bold text-[16px] leading-[30.24px] text-white uppercase"
-          onClick={() => message.info('Coming soon')}
+          href="https://elite-packet-d7d.notion.site/RAVE-NFT-107dbba357c94a479734660902b5e9b8?pvs=4"
         >
           About
         </Button>
